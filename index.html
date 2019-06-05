@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no" /> -->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
+	<script src="js/index.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+
+<body>
+	<header>
+		<a href="personalcenter.html" class="header-left"><img src="images/o-touxiang_03.png" alt=""> </a>
+		<p>车互帮</p>
+		<a href="zhuce.html" class="header-right">
+			<img src="images/o-xuanxiangkuang_06.jpg" alt="">
+			<!-- <div class="tuoyuan-top">
+					<img src="images/o-xiaoqiche.png" alt="">
+					选择您的车型
+				</div> -->
+		</a>
+	</header>
+	<div class="nav">
+		<div class="nav-left">
+			<a href="index.html">
+				<span>
+					地图
+				</span>
+			</a>
+		</div>
+		<div class="nav-right">
+			<a href="o-liebiao.html" class="nav-right-a">
+				<span>
+					列表
+				</span>
+			</a>
+		</div>
+	</div>
+	<!-- 地图 -->
+	<div class="map">
+		<div style="width:10rem; border:#ccc solid 0.015625rem;" id="dituContent" class=""></div>
+	</div>
+
+
+
+	<a href="o-qunfayemian.html" class="qunfa">
+		群发
+	</a>
+	<footer>
+		<a href="chehubang.html" class="fpic1"><img src="images/footer1.png" alt="">
+
+			<div class="tuoyuan-bottom">
+				<p>
+					选择您需要的服务项目
+				</p>
+			</div>
+
+		</a>
+		<a href="xuanzepinpai.html" class="fpic2"><img src="images/footer2.png" alt=""></a>
+		<a href="clicktuangou_state.html" class="fpic3"><img src="images/footer3.png" alt=""></a>
+	</footer>
+</body>
+<script type="text/javascript">
+	//创建和初始化地图函数：
+	function initMap() {
+		createMap(); //创建地图
+		setMapEvent(); //设置地图事件
+		addMapControl(); //向地图添加控件
+	}
+
+	//创建地图函数：
+	function createMap() {
+		var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
+		var point = new BMap.Point(116.395645, 39.929986); //定义一个中心点坐标
+		map.centerAndZoom(point, 12); //设定地图的中心点和坐标并将地图显示在地图容器中
+		window.map = map; //将map变量存储在全局
+	}
+
+	//地图事件设置函数：
+	function setMapEvent() {
+		map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+		map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
+		map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+		map.enableKeyboard(); //启用键盘上下左右键移动地图
+	}
+
+	//地图控件添加函数：
+	function addMapControl() {
+		//向地图中添加缩放控件
+		var ctrl_nav = new BMap.NavigationControl({
+			anchor: BMAP_ANCHOR_TOP_LEFT,
+			type: BMAP_NAVIGATION_CONTROL_LARGE
+		});
+		map.addControl(ctrl_nav);
+		//向地图中添加缩略图控件
+		var ctrl_ove = new BMap.OverviewMapControl({
+			anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+			isOpen: 0
+		});
+		map.addControl(ctrl_ove);
+		//向地图中添加比例尺控件
+		var ctrl_sca = new BMap.ScaleControl({
+			anchor: BMAP_ANCHOR_BOTTOM_LEFT
+		});
+		map.addControl(ctrl_sca);
+		// map.enableAutoResize();
+
+	}
+
+
+	initMap(); //创建和初始化地图
+</script>
+
+</html>
