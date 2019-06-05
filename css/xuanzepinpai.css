@@ -1,0 +1,59 @@
+html {
+  margin: 0; }
+
+body {
+  margin: 0; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fca738; }
+  ul li {
+    float: left; }
+    ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 0.2rem 1rem;
+      font-size: 1.2rem;
+      text-decoration: none; }
+
+.tou {
+  width: 100%;
+  height: 1.3rem;
+  background: #dcdcdc; }
+
+.tou1 {
+  width: 100%;
+  border: 1px solid #ccc; }
+  .tou1 .tou2 {
+    background: #bcbcbc;
+    margin-top: 0.5rem; }
+  .tou1 .tou3 {
+    margin-top: 0.5rem;
+    background: #ffe5c2; }
+  .tou1 .tou4 {
+    display: block;
+    margin-top: 1rem;
+    border: 1px solid #ccc; }
+
+.zj {
+  width: 100%;
+  height: 3.12rem;
+  margin-top: 1.3rem; }
+  .zj .zj1 {
+    background: #bcbcbc;
+    margin-top: 2.5rem; }
+  .zj .zj2 {
+    margin-top: -1rem; }
+  .zj .zj3 {
+    margin-top: -1.2rem;
+    border: 1px solid #ccc; }
+  .zj .zj4 {
+    margin-top: -1.3rem; }
+  .zj .zj5 {
+    margin-top: -1.5rem; }
+  .zj .zj6 {
+    margin-top: 5.2rem; }

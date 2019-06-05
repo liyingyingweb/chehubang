@@ -1,0 +1,314 @@
+html {
+	font-size: 100px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+}
+
+body,
+ul,
+div,
+img,
+p,
+a,
+h3,
+h4,
+span {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+header {
+	width: 100%;
+	height: 1.790625rem;
+	padding: 0.525rem 0.265625rem 0 0.265625rem;
+	background-color: #fca738;
+	display: flex;
+
+	.header-left {
+		flex: 0.5;
+		display: block;
+		width: 1.15625rem;
+		height: 1.15625rem;
+		padding-right: 0.265625rem;
+
+		img {
+			width: 1.15625rem;
+			height: 1.15625rem;
+		}
+	}
+
+	p {
+		height: 1.790625rem;
+		flex: 4;
+		font-size: 15px;
+		color: white;
+		line-height: 1.290625rem;
+		text-align: center;
+		left: 0.265625rem;
+	}
+
+	.header-right {
+		flex: 0.5;
+		display: block;
+		width: 1.15625rem;
+		height: 1.15625rem;
+		display: flex;
+
+		.header-right-a {
+			display: block;
+			line-height: 1.15625rem;
+		}
+
+		img {
+			margin: auto;
+			display: block;
+			width: 0.671875rem;
+			height: 0.390625rem;
+		}
+	}
+}
+
+// nav
+.nav {
+	width: 100vw;
+	height: 1.015625rem;
+	background: #ffdbaa;
+	display: flex;
+
+	.nav-left {
+		flex: 1;
+		height: 1.015625rem;
+		position: relative;
+
+		a {
+
+			display: block;
+			width: 1.8125rem;
+			height: 0.71875rem;
+			line-height: 0.71875rem;
+			border: 1px solid #e5ad3f;
+			position: absolute;
+			right: 0;
+			top: 0.15625rem;
+
+			span {
+				display: block;
+				font-size: 15px;
+				color: #e5ad3f;
+				// line-height: 1.015625rem;
+				text-align: center;
+			}
+		}
+	}
+
+	.nav-right {
+		flex: 1;
+		position: relative;
+
+		.nav-right-a {
+			display: block;
+			width: 1.8125rem;
+			height: 0.71875rem;
+			line-height: 0.71875rem;
+			background: #e5ad3f;
+			position: absolute;
+			left: 0;
+			top: 0.15625rem;
+
+			span {
+				display: block;
+				font-size: 15px;
+				color: #fff;
+				// line-height: 1.015625rem;
+				text-align: center;
+			}
+		}
+
+		a:nth-child(2) {
+			display: block;
+			width: 1.8125rem;
+			height: 0.71875rem;
+			// border: 0;
+			// height: 0.89rem;
+			background: #fca738;
+			color: white;
+			position: absolute;
+			right: 0.3125rem;
+			top: 0.15625rem;
+
+			font-size: 15px;
+			text-align: center;
+			line-height: 0.78125rem;
+		}
+	}
+}
+
+.liebiao {
+	width: 100vw;
+	padding: 0 0.1875rem 0 0.1875rem;
+	display: flex;
+	border-bottom: 0.03rem solid #aaa;
+
+	>a {
+		display: block;
+		height: 1.609375rem;
+		padding: 0.1875rem 0 0.1875rem 0;
+	}
+
+	.liebiao-pic1 {
+		flex: 1.34;
+
+		img {
+			width: 1.265625rem;
+			height: 1.265625rem;
+		}
+	}
+
+	.liebiao-xiangqing {
+		flex: 3.64;
+		background: white;
+		line-height: 0.4475rem;
+		margin-left: 0.28125rem;
+
+		.liebiao-title {
+			font-size: 10.7px;
+			color: #777676;
+		}
+
+		.liebiao-pingjia {
+			font-size: 9px;
+			color: #a09f9f;
+
+			span {
+				color: #f3942c;
+			}
+		}
+
+		.liebiao-tese {
+			font-size: 10px;
+			color: #777676;
+		}
+	}
+
+	.liebiao-weizhi {
+		flex: 2.26;
+		height: 1.015625rem;
+
+		img {
+			display: block;
+			width: 0.296875rem;
+			height: 0.46875rem;
+			position: relative;
+			top: 0.2rem;
+		}
+
+		p {
+			font-size: 10px;
+			line-height: 0.1rem;
+			color: #777676;
+			text-indent: 0.4rem;
+		}
+	}
+
+	.xiaoxi {
+		flex: 0.08;
+		height: 1.609375rem;
+
+		.xiaoxi-pic {
+			width: 0.90625rem;
+			height: 0.828125rem;
+			// 插图
+			background: url(../images/o-xiaoxi.png) no-repeat center center;
+			background-size: 100% 100%;
+			margin-top: 0.103125rem;
+		}
+
+		p {
+			// 文字
+			font-size: 10px;
+			color: #ff0000;
+			font-weight: 700;
+			line-height: 0.65rem;
+			text-align: center;
+		}
+	}
+
+	.gouxuan {
+		flex: 1.8;
+
+		img {
+			width: 1.03125rem;
+			height: 0.875rem;
+			float: right;
+		}
+	}
+}
+
+// 悬浮的群发图标
+
+.qunfa {
+	display: block;
+	width: 1.453125rem;
+	height: 1.453125rem;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 50%;
+
+	font-size: 10px;
+	color: black;
+	font-weight: 600;
+	text-align: center;
+	line-height: 1.453125rem;
+	// 定位
+	position: fixed;
+	right: 0;
+	top: 7.8125rem;
+}
+
+// footer
+footer {
+	width: 100%;
+	height: 1.5625rem;
+	background: #fca738;
+	display: flex;
+	padding-top: 0.390625rem;
+	position: fixed;
+	bottom: 0;
+
+	a {
+		display: block;
+		flex: 1;
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	.fpic1 {
+		img {
+			width: 0.703125rem;
+			height: 0.71875rem;
+		}
+	}
+
+	.fpic2 {
+		img {
+			width: 0.8125rem;
+			height: 0.796875rem;
+		}
+	}
+
+	.fpic3 {
+		img {
+			width: 1.28125rem;
+			height: 0.625rem;
+		}
+	}
+}

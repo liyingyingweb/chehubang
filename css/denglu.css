@@ -1,0 +1,55 @@
+html {
+  font-size: 100px;
+  margin: 0; }
+
+body {
+  margin: 0; }
+
+.tou {
+  width: 100%;
+  height: 1.41rem;
+  border: 1px solid #ccc;
+  background: #fca738; }
+  .tou span {
+    display: block;
+    font-size: 0.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 0.3rem; }
+
+.shengti {
+  width: 100%;
+  height: 8rem;
+  border: 1px solid #ccc;
+  margin: 0 auto; }
+  .shengti a {
+    display: block;
+    font-size: 0.2rem;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    text-align: left; }
+  .shengti input {
+    display: block;
+    height: 0.25rem;
+    width: 50%;
+    margin-left: 1rem;
+    margin-top: -0.3rem;
+    text-align: left; }
+  .shengti button {
+    margin-left: 0.7rem;
+    width: 50%;
+    height: 0.37rem;
+    background: #ffd9a6;
+    font-size: 0.2rem; }
+  .shengti .shengti1 {
+    display: block;
+    margin-left: 70%; }
+  .shengti p {
+    font-size: 0.16rem;
+    margin-left: 0.2rem; }
+  .shengti .shengti2 {
+    display: block;
+    margin-top: -0.8rem; }
+    .shengti .shengti2 button {
+      color: white;
+      background: #fca738; }

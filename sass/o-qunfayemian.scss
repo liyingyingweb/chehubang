@@ -1,0 +1,278 @@
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+
+}
+
+body,
+ul,
+div,
+img,
+p,
+a,
+h3,
+h4,
+span {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+
+    padding: .4rem .3125rem 0 .3125rem;
+    height: 1.690625rem;
+    background-color: #fca738;
+    display: flex;
+
+    .header-left {
+        flex: 0.65;
+        display: block;
+        width: 1.15625rem;
+        height: 1.15625rem;
+        padding-right: .265625rem;
+
+        img {
+            width: 1.15625rem;
+            height: 1.15625rem;
+        }
+    }
+
+    p {
+        flex: 3.7;
+        font-size: 11px;
+        color: white;
+        line-height: 1.265625rem;
+        text-align: center;
+        left: .265625rem;
+    }
+
+    .header-right {
+        flex: 0.65;
+        display: block;
+        width: 1.15625rem;
+        height: 1.15625rem;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+
+        font-size: 11px;
+        text-align: center;
+        line-height: 1.190625rem;
+        color: white;
+
+    }
+}
+
+// 群发对话框
+.qun-content {
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+
+    .content-left {
+        flex: 2.8;
+
+
+        ul {
+            list-style: none;
+
+            .nbsp {
+                height: .4525rem;
+                border-right: .015625rem solid #cbcbcb;
+            }
+
+            li {
+                height: 1.515625rem;
+                border-bottom: .015625rem solid #cbcbcb;
+                border-right: .015625rem solid #cbcbcb;
+                padding-left: .328125rem;
+                position: relative;
+
+                a {
+                    display: flex;
+
+                    img {
+                        width: .953125rem;
+                        height: .953125rem;
+                        border-radius: 50%;
+                        margin-top: .328125rem;
+
+
+                    }
+
+                    p {
+                        font-size: 9px;
+                        color: black;
+                        margin-top: .25rem;
+                    }
+                }
+
+                .shape {
+                    width: .859375rem;
+                    height: .796875rem;
+                    background: url(../images/o-Shape.png) no-repeat;
+                    background-size: 100% 100%;
+
+                    font-size: 10px;
+                    color: red;
+                    text-align: center;
+                    font-weight: 600;
+                    padding-top: .100625rem;
+
+                    position: absolute;
+                    top: -0.3125rem;
+                    left: 0.403125rem;
+
+                }
+            }
+
+
+
+        }
+
+    }
+
+    .content-right {
+        flex: 7.2;
+        min-height: 100%;
+        padding: 0 .15625rem 0 .15625rem;
+        background: #fff4e5;
+
+        .duihua-left {
+            height: .984375rem;
+            overflow: hidden;
+
+            img {
+                display: block;
+                width: .953125rem;
+                height: 1rem;
+                border-radius: 50%;
+                float: left;
+            }
+
+            p {
+                float: left;
+                display: block;
+                width: 2.828125rem;
+                height: 100%;
+                background: white;
+                border-radius: 0.1rem;
+                margin-left: .40625rem;
+                padding: .15625rem 0 0 .1875rem;
+                position: relative;
+
+                color: black;
+                font-size: 10px;
+                font-weight: 700;
+
+                span {
+                    position: absolute;
+                    top: 0;
+                    left: -0.4rem;
+
+                    img {
+                        width: .625rem;
+                        height: .296875rem;
+                    }
+                }
+            }
+        }
+
+
+        .dhsj {
+            height: .296875rem;
+            font-size: 10px;
+            color: #5e5e5e;
+            text-align: center;
+            margin: .234375rem 0;
+        }
+    }
+}
+
+
+// 群发对话框结束
+// 白色半透明背景
+.shuruba {
+    width: 100%;
+    height: 1.390625rem;
+    position: fixed;
+    bottom: 0;
+
+    .shurukuang {
+        height: 1.390625rem;
+        padding: .1875rem 0 .1875rem 0;
+        background: #f6f6f6;
+        box-shadow: .058125rem .038125rem .038125rem .015625rem #777676;
+        display: flex;
+
+        .kuang-left {
+            flex: 0.5;
+            display: block;
+            width: .859375rem;
+            height: .90625rem;
+
+            display: flex;
+
+            img {
+                display: block;
+                width: .59375rem;
+                height: .59375rem;
+                margin: auto;
+            }
+        }
+
+        p {
+            flex: 4;
+
+            input[type=text] {
+                display: block;
+                width: 100%;
+                height: .90625rem;
+                border-radius: 0.1rem;
+                border: .015625rem solid gray;
+                outline: medium;
+                // outline: none;
+            }
+        }
+
+        .kuang-right {
+            flex: 0.5;
+            display: block;
+            width: .859375rem;
+            height: .90625rem;
+            display: flex;
+
+
+            img {
+                display: block;
+                width: .390625rem;
+                height: .78125rem;
+                margin: auto;
+            }
+        }
+
+    }
+
+    .jianpan {
+        width: 100%;
+        border: .15625rem solid red;
+        height: 7.078125rem;
+
+
+
+        h3 {
+            text-align: center;
+            line-height: 7.078125rem;
+            font-family: sans-serif;
+            font-size: 1.25rem;
+        }
+    }
+}

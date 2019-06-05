@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: white; }
+
+body,
+ul,
+div,
+img,
+p,
+a,
+h3,
+h4,
+span {
+  padding: 0;
+  margin: 0;
+  text-decoration: none; }
+
+header {
+  width: 100%;
+  height: 1.790625rem;
+  padding: 0.525rem 0.265625rem 0 0.265625rem;
+  background-color: #fca738;
+  display: flex; }
+  header .header-left {
+    flex: 0.5;
+    display: block;
+    width: 1.15625rem;
+    height: 1.15625rem;
+    padding-right: 0.265625rem; }
+    header .header-left img {
+      width: 1.15625rem;
+      height: 1.15625rem; }
+  header p {
+    flex: 4;
+    height: 1.790625rem;
+    font-size: 15px;
+    color: white;
+    line-height: 1.290625rem;
+    text-align: center; }
+  header .header-right {
+    flex: 0.5;
+    display: block;
+    width: 1.15625rem;
+    height: 1.15625rem;
+    display: flex;
+    position: relative; }
+    header .header-right img {
+      display: block;
+      width: 0.671875rem;
+      height: 0.390625rem;
+      margin: auto; }
+
+.nav {
+  width: 100vw;
+  height: 1.015625rem;
+  background: #ffdbaa;
+  display: flex;
+  display: flex; }
+  .nav .nav-left {
+    flex: 1;
+    height: 1.015625rem;
+    position: relative; }
+    .nav .nav-left a {
+      display: block;
+      width: 1.8125rem;
+      height: 0.71875rem;
+      line-height: 0.71875rem;
+      border: 1px solid #e5ad3f;
+      position: absolute;
+      right: 0;
+      top: 0.15625rem; }
+      .nav .nav-left a span {
+        display: block;
+        font-size: 15px;
+        color: #e5ad3f;
+        text-align: center; }
+  .nav .nav-right {
+    flex: 1;
+    position: relative; }
+    .nav .nav-right .nav-right-a {
+      display: block;
+      width: 1.8125rem;
+      height: 0.71875rem;
+      line-height: 0.71875rem;
+      background: #e5ad3f;
+      position: absolute;
+      left: 0;
+      top: 0.15625rem; }
+      .nav .nav-right .nav-right-a span {
+        display: block;
+        font-size: 15px;
+        color: #fff;
+        text-align: center; }
+
+body,
+html,
+#dituContent {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0;
+  position: absolute; }
+
+.iw_poi_title {
+  color: #cc5522;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  padding-right: 0.2031rem;
+  white-space: nowrap; }
+
+.iw_poi_content {
+  font: 12px arial, sans-serif;
+  overflow: visible;
+  padding-top: 0.0625rem;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word; }
+
+.qunfa {
+  display: block;
+  width: 1.453125rem;
+  height: 1.453125rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  font-size: 10px;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.453125rem;
+  position: fixed;
+  right: 0;
+  top: 7.8125rem; }
+
+footer {
+  width: 100%;
+  height: 1.5625rem;
+  background: #fca738;
+  display: flex;
+  padding-top: 0.390625rem;
+  position: fixed;
+  bottom: 0; }
+  footer a {
+    display: block;
+    flex: 1; }
+    footer a img {
+      display: block;
+      margin: 0 auto; }
+  footer .fpic1 {
+    position: relative; }
+    footer .fpic1 img {
+      width: 0.703125rem;
+      height: 0.71875rem; }
+    footer .fpic1 .tuoyuan-bottom {
+      width: 2.5rem;
+      height: 3.484375rem;
+      background: url(../images/xuanzexiangmu.png) no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      top: -3.59375rem;
+      left: 1.006875rem;
+      display: flex; }
+      footer .fpic1 .tuoyuan-bottom p {
+        height: 1.75rem;
+        width: 1.875rem;
+        font-size: 10px;
+        color: black;
+        margin: auto; }
+  footer .fpic2 img {
+    width: 0.8125rem;
+    height: 0.796875rem; }
+  footer .fpic3 img {
+    width: 1.28125rem;
+    height: 0.625rem; }
+
+/*# sourceMappingURL=index.css.map */

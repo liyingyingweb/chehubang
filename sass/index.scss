@@ -1,0 +1,261 @@
+html {}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+}
+
+body,
+ul,
+div,
+img,
+p,
+a,
+h3,
+h4,
+span {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+header {
+	width: 100%;
+	height: 1.790625rem;
+	padding: 0.525rem 0.265625rem 0 0.265625rem;
+	background-color: #fca738;
+	display: flex;
+
+	.header-left {
+		flex: 0.5;
+		display: block;
+		width: 1.15625rem;
+		height: 1.15625rem;
+		padding-right: 0.265625rem;
+
+		img {
+			width: 1.15625rem;
+			height: 1.15625rem;
+		}
+	}
+
+	p {
+		flex: 4;
+		height: 1.790625rem;
+		font-size: 15px;
+		color: white;
+		line-height: 1.290625rem;
+		text-align: center;
+	}
+
+	.header-right {
+		flex: 0.5;
+		display: block;
+		width: 1.15625rem;
+		height: 1.15625rem;
+		// padding-top: 0.4rem;
+		display: flex;
+
+
+		position: relative;
+
+		img {
+			display: block;
+			width: 0.671875rem;
+			height: 0.390625rem;
+			margin: auto;
+		}
+
+		// 定位用到
+		// .tuoyuan-top {
+		// 	width: 2.46875rem;
+		// 	height: 3.21875rem;
+		// 	background: url(../images/o-tuoyuan-top.png) no-repeat;
+		// 	background-size: 100% 100%;
+		// 	position: absolute;
+		// 	top: 3.6875rem;
+		// 	right: 37px;
+		// }
+	}
+}
+
+// nav
+.nav {
+	width: 100vw;
+	height: 1.015625rem;
+	background: #ffdbaa;
+	display: flex;
+	display: flex;
+
+	.nav-left {
+		flex: 1;
+		height: 1.015625rem;
+		position: relative;
+
+		a {
+			display: block;
+			width: 1.8125rem;
+			height: 0.71875rem;
+			line-height: 0.71875rem;
+			border: 1px solid #e5ad3f;
+			position: absolute;
+			right: 0;
+			top: 0.15625rem;
+
+			span {
+				display: block;
+				font-size: 15px;
+				color: #e5ad3f;
+				// line-height: 1.015625rem;
+				text-align: center;
+			}
+		}
+	}
+
+	.nav-right {
+		flex: 1;
+		position: relative;
+
+		.nav-right-a {
+			display: block;
+			width: 1.8125rem;
+			height: 0.71875rem;
+			line-height: 0.71875rem;
+			background: #e5ad3f;
+			position: absolute;
+			left: 0;
+			top: 0.15625rem;
+
+			span {
+				display: block;
+				font-size: 15px;
+				color: #fff;
+				// line-height: 1.015625rem;
+				text-align: center;
+			}
+		}
+	}
+}
+
+// map
+body,
+html,
+#dituContent {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	margin: 0;
+	position: absolute;
+	// 绝对定位很重要
+}
+
+.iw_poi_title {
+	color: #cc5522;
+	font-size: 14px;
+	font-weight: bold;
+	overflow: hidden;
+	padding-right: 0.2031rem;
+	white-space: nowrap;
+}
+
+.iw_poi_content {
+	font: 12px arial, sans-serif;
+	overflow: visible;
+	padding-top: 0.0625rem;
+	white-space: -moz-pre-wrap;
+	word-wrap: break-word;
+}
+
+// map
+
+// 悬浮的群发图标
+
+.qunfa {
+	display: block;
+	width: 1.453125rem;
+	height: 1.453125rem;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 50%;
+
+	font-size: 10px;
+	color: black;
+	font-weight: 600;
+	text-align: center;
+	line-height: 1.453125rem;
+	// 定位
+	position: fixed;
+	right: 0;
+	top: 7.8125rem;
+}
+
+// footer
+footer {
+	width: 100%;
+	height: 1.5625rem;
+	background: #fca738;
+	display: flex;
+	padding-top: 0.390625rem;
+	position: fixed;
+	bottom: 0;
+
+	a {
+		display: block;
+		flex: 1;
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	.fpic1 {
+		position: relative;
+
+
+		img {
+			width: 0.703125rem;
+			height: 0.71875rem;
+		}
+
+		.tuoyuan-bottom {
+			width: 2.5rem;
+			height: 3.484375rem;
+			background: url(../images/xuanzexiangmu.png) no-repeat;
+			background-size: 100% 100%;
+
+			position: absolute;
+			top: -3.59375rem;
+			left: 1.006875rem;
+
+			display: flex;
+
+			p {
+				height: 1.75rem;
+				width: 1.875rem;
+				font-size: 10px;
+
+				color: black;
+				margin: auto;
+			}
+		}
+	}
+
+	.fpic2 {
+		img {
+			width: 0.8125rem;
+			height: 0.796875rem;
+		}
+	}
+
+	.fpic3 {
+		img {
+			width: 1.28125rem;
+			height: 0.625rem;
+		}
+	}
+}
+
+// 高 222  1/2 是111
